@@ -22,9 +22,9 @@ class Adverisement(models.Model):
     # торг
     auction = models.BooleanField(("Торг"), help_text='Отметьте, если торг уместен')
     # поле создания объявления
-    created_add = models.DateTimeField(auto_now_add=True)
+    created_add = models.DateTimeField(('Было создано'),auto_now_add=True)
     # поле обновления объявления
-    updated_add = models.DateTimeField(auto_now=True)
+    updated_add = models.DateTimeField(('Было обновлено'),auto_now=True)
     
     
     def __str__(self):
